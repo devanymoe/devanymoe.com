@@ -1,0 +1,98 @@
+.header{
+	background-color: #FFF;
+	vertical-align: center;
+}
+
+.name{
+	text-align: left;
+	font-family: "Baskerville";
+	font-size: 36pt;
+	margin-top:25px;
+	margin-left:15px;
+}
+
+.title{
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+	font-size: 11pt;
+	padding-left: 7px;
+	color: #868686;
+}
+
+.navigation{
+	text-align: right;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+	font-size: 11pt;
+	text-transform: uppercase;
+	margin-bottom:10px;
+	margin-top:-35px;
+	margin-right:15px;
+}
+@media (max-width: 800px) {
+  .navigation {
+    margin-top:10px;
+    text-align:center;
+    margin-right:0px;
+  }
+  .title{
+  	display:block;
+  	text-align:center;
+  }
+  .name{
+  	text-align: center;
+  	margin-left:0px;
+  }
+}
+.navigation a{
+	padding-left:7px;
+}
+
+/* LINKS */
+.a-active{
+	text-decoration: underline;
+	color: #515151;
+}
+
+a{
+	text-decoration: none;
+	color: #898989;
+}
+
+.col-md-4{
+	padding:0;
+
+}
+.piece{
+	position:relative;
+}
+.piece:hover .piece-hover {
+	opacity:.85;
+}
+.piece-hover{
+	background:#00a79d;
+	position:absolute;
+	top: 0;
+	bottom:0;
+	left:0;
+	right:0;
+	opacity:0;
+	text-align:center;
+	color:#FFF;
+	transition:opacity .2s;
+	-ms-transition:opacity .2s;
+	-moz-transition:opacity .2s;
+	-webkit-transition:opacity .2s;
+}
+.piece-name{
+	margin-top:22%;
+}
+.piece-title{
+	font-family: "HelveticaNeue";
+	font-size: 20px;
+	margin-bottom: -3px;
+}
+.piece-type{
+	font-style: italic;
+}
+img{
+	max-width: 100%;
+}
