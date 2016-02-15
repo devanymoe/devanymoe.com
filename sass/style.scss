@@ -1,43 +1,56 @@
+$font-stack:    'Work Sans';
+$header-font: 'Montserrat';
+$primary-color: #FF7665;
+
 /***General-Styles***/
+
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  font: 100% "Work Sans";
-  color: #FF7665;
+  font: 100% $font-stack;
+  color: $primary-color;
   font-size: 16px;
-  line-height: 150%; }
+  line-height: 150%;
+}
 
 /***Nav-Styles***/
 .navs {
-  background: #FF7665; }
+  background: $primary-color;
+}
 
 body .navbar {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 .navbar .navbar-header .navbar-brand {
-  color: #fff;
-  font-family: "Montserrat";
-  font-size: 30px;
-  font-weight: 500; }
+    color: #fff;
+    font-family: $header-font;
+    font-size: 30px;
+    font-weight: 500;
+}
 
 .navbar ul a {
   color: #fff;
-  font-family: "Work Sans";
+  font-family: $font-stack;
   font-size: 16px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 
 .navbar ul a:hover {
-  color: #FF7665;
-  background-color: #fff; }
-
+  color: $primary-color;
+  background-color: #fff;
+}
 .icon-bar {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 /***Header-Styles***/
+
 .header {
   width: 100%;
   background: url(../images/devany.jpg);
@@ -45,31 +58,37 @@ body .navbar {
   overflow: hidden;
   background-size: cover;
   background-position: 100% -9%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
 
 .headline {
   background-color: #1c1c1c;
   padding: 5px 15px 5px 15px;
   margin: 17% 0 0 20%;
-  display: inline-block; }
+  display: inline-block;
+}
 
 /***Section-Styles***/
+
 .dark-section {
   background-color: #1c1c1c;
   color: #fff;
-  padding: 40px 0 56px 0; }
+  padding: 40px 0 56px 0;
+}
 
 .dark-section p {
   width: 87%;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .light-section {
   background-color: #fff;
   color: #000;
-  padding: 40px 0 20px 0; }
-
+  padding: 40px 0 20px 0;
+}
 .resume {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 /***Button-and-Form-Styles***/
 input[name=name], input[name=_replyto], textarea[name=message] {
@@ -78,145 +97,155 @@ input[name=name], input[name=_replyto], textarea[name=message] {
   -ms-transition: all 0.30s ease-in-out;
   -o-transition: all 0.30s ease-in-out;
   outline: none;
-  box-shadow: none; }
-
+  box-shadow: none;
+}
 textarea[name=message] {
-  rows: "10"; }
-
+  rows: "10";
+}
 input[name=name]:focus, input[name=_replyto]:focus, textarea[name=message]:focus {
   box-shadow: none;
-  border: 1px solid #FF7665; }
-
-.button {
+  border: 1px solid $primary-color;
+}
+.button{
   background-color: transparent;
   padding: 8px 40px;
   border-radius: 2px;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
-  color: #FF7665;
-  border: 2px solid #FF7665; }
-
-.button:hover {
-  background-color: #FF7665;
-  color: #fff; }
-
-.button:focus {
-  background-color: #FF7665;
+  color: $primary-color;
+  border: 2px solid $primary-color;
+}
+.button:hover{
+  background-color: $primary-color;
   color: #fff;
-  outline: none; }
-
+}
+.button:focus{
+  background-color: $primary-color;
+  color: #fff;
+  outline: none;
+}
 form {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+}
 
 /***Portfolio-Styles***/
 .light-section img {
-  width: 250px; }
-
+  width: 250px;
+}
 .piece {
   width: 250px;
   display: inline-block;
   margin: 0 5px;
-  overflow: none; }
-
+  overflow: none;
+}
 .piece:hover .piece-hover {
-  opacity: .85; }
-
+	opacity: .85;
+}
 .piece-hover {
-  background: #FF7665;
-  position: absolute;
+	background: $primary-color;
+	position:absolute;
   width: 250px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
   margin: 0 auto;
-  opacity: 0;
-  text-align: center;
-  color: #FFF;
+	opacity:0;
+	text-align:center;
+	color:#FFF;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity .2s;
-  -ms-transition: opacity .2s;
-  -moz-transition: opacity .2s;
-  -webkit-transition: opacity .2s; }
-
-.piece-title {
-  font-size: 20px;
-  margin-bottom: -3px; }
-
-.piece-type {
-  font-style: italic;
-  margin-top: 10px; }
-
+	transition:opacity .2s;
+	-ms-transition:opacity .2s;
+	-moz-transition:opacity .2s;
+	-webkit-transition:opacity .2s;
+}
+.piece-title{
+	font-size: 20px;
+	margin-bottom: -3px;
+}
+.piece-type{
+	font-style: italic;
+  margin-top: 10px;
+}
 .quote-one {
-  margin-top: 50px; }
-
+  margin-top: 50px;
+}
 .quote-two {
-  margin-top: 5px; }
-
+  margin-top: 5px;
+}
 .light-section blockquote {
-  border-left: 5px solid #FF7665; }
-
+  border-left: 5px solid $primary-color;
+}
 .quotation {
   font-family: Georgia;
   font-size: 40px;
   line-height: 50%;
   vertical-align: middle;
-  color: #b1b1b1; }
+  color: #b1b1b1;
+}
 
 /***Text-Styles***/
+
 h1 {
   font-size: 30px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 h2 {
-  text-align: center;
-  font-size: 26px;
-  font-family: "Montserrat";
-  margin-bottom: 30px;
+  text-align:center;
+  font-size:26px;
+  font-family: $header-font;
+  margin-bottom:30px;
   display: inline-block;
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 .header h3 {
   color: #fff;
   font-size: 20px;
   margin: 1.5% 0 0 20%;
   max-width: 450px;
-  line-height: 150%; }
+  line-height: 150%;
+}
 
 .row h3 {
   color: #fff;
   font-size: 20px;
   width: 87%;
-  margin: 10px auto; }
+  margin: 10px auto;
+}
 
 .dark-section h2 {
-  background-color: #fff;
+  background-color:#fff;
   padding: 5px 10px 5px 10px;
   text-align: center;
-  color: #FF7665; }
+  color: $primary-color;
+}
 
 .light-section h2 {
-  background-color: #1c1c1c;
+  background-color:#1c1c1c;
   padding: 5px 10px 5px 10px;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+}
 
 h3 .fa:first-child {
-  margin-right: 10px; }
+  margin-right: 10px;
+}
 
 h3 .fa {
-  margin-right: 6px; }
+  margin-right: 6px;
+}
 
 h4 {
-  color: #FF7665;
+  color: $primary-color;
   width: 87%;
-  margin: 24px auto 3px auto; }
-
+  margin: 24px auto 3px auto;
+}
 .resume p {
-  text-align: justify; }
-
-/*# sourceMappingURL=style.css.map */
+  text-align: justify;
+}
