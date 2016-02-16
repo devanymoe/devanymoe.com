@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box; }
 
+html body *:focus {
+  outline: none; }
+
 body {
   font: 100% "Work Sans";
   color: #FF7665;
@@ -165,10 +168,40 @@ form {
   vertical-align: middle;
   color: #b1b1b1; }
 
+/***Project-Styles***/
+.project {
+  background-color: #fff;
+  color: #000;
+  padding: 70px 0 40px 0; }
+
+.project .first-hr {
+  margin: 30px 0; }
+
+.project .second-hr {
+  margin: 50px 0 30px 0; }
+
+.project .img-top {
+  border: 1px solid #E0E0E0;
+  max-width: 100%;
+  margin-top: 60px; }
+
+.project .img-results {
+  max-width: 100%;
+  margin-top: 20px; }
+
+.project p {
+  text-align: justify; }
+
 /***Text-Styles***/
 h1 {
   font-size: 30px;
   color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; }
+
+.project-name {
+  font-size: 30px;
+  color: #1c1c1c;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500; }
 
@@ -199,7 +232,7 @@ h2 {
   text-align: center;
   color: #FF7665; }
 
-.light-section h2 {
+.light-section h2, .project h2 {
   background-color: #1c1c1c;
   padding: 5px 10px 5px 10px;
   text-align: center;
@@ -216,7 +249,39 @@ h4 {
   width: 87%;
   margin: 24px auto 3px auto; }
 
+.resume .title {
+  font-style: italic; }
+
 .resume p {
   text-align: justify; }
+
+/***responsive-styles***/
+@media (max-width: 1199px) {
+  .light-section .col-sm-6, .light-section .col-md-6 {
+    margin-bottom: 30px; } }
+@media (max-width: 1175px) {
+  .headline {
+    margin: 17% 0 0 3%; }
+
+  .header h3 {
+    margin-left: 3%; }
+
+  .header {
+    background-position: 100% -30%; }
+
+  .header h3 {
+    background-color: #fff;
+    color: #FF7665;
+    padding: 10px;
+    font-size: 19px; } }
+@media (max-width: 1000px) {
+  .header {
+    background-position: 100% -150%; } }
+@media (max-width: 991px) {
+  .education {
+    margin-top: 45px; }
+
+  .headline {
+    margin: 34% 0 0 3%; } }
 
 /*# sourceMappingURL=style.css.map */
