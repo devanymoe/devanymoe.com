@@ -20,9 +20,13 @@ body {
 
 /***Nav-Styles***/
 .navs {
-  // background: $primary-color;
   padding-left: 10px;
   padding-right: 10px;
+  transition: 0.5s ease;
+}
+
+.solidNav {
+  background-color: $primary-color;
 }
 
 body .navbar {
