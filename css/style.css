@@ -204,6 +204,9 @@ form {
   vertical-align: middle;
   color: #b1b1b1; }
 
+.footer {
+  margin-bottom: 60px; }
+
 /***Project-Styles***/
 .project {
   background-color: #fff;
