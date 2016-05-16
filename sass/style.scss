@@ -1,5 +1,4 @@
 $font-stack:    'Open Sans';
-$header-font: 'Open Sans';
 $primary-color: #49A796;
 
 /***General-Styles***/
@@ -35,7 +34,7 @@ body .navbar {
 
 .navbar .navbar-header .navbar-brand {
     color: #fff;
-    font-family: $header-font;
+    font-family: $font-stack;
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -89,9 +88,11 @@ body .navbar {
 }
 
 .dark-section {
-  background-color: #1c1c1c;
   color: #fff;
-  padding: 40px 0 56px 0;
+  padding-top: 10%;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .dark-section p {
@@ -99,13 +100,36 @@ body .navbar {
   margin: 0 auto;
 }
 
+.dark-section::before {
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 120%;
+  background-color: #2D2E40;
+  position: absolute;
+  transform: skewY(-5deg);
+}
+
 .light-section {
+  margin-top: 200px;
   background-color: #fff;
   color: #000;
-  padding: 40px 0 20px 0;
+  padding: 150px 0 50px 0;
 }
 .resume {
   margin: 0 auto;
+}
+
+.education {
+  margin-top: 50px;
+}
+
+.dark-section-straight {
+  margin-top: -100px;
+  background-color: #2D2E40;
+  height: 200px;
 }
 
 /***Button-and-Form-Styles***/
@@ -129,7 +153,7 @@ input[name=name]:focus, input[name=_replyto]:focus, textarea[name=message]:focus
   padding: 8px 40px;
   border-radius: 2px;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-stack, sans-serif;
   color: $primary-color;
   border: 2px solid $primary-color;
 }
@@ -248,14 +272,14 @@ h1 span {
 .project-name {
   font-size: 30px;
   color: #1c1c1c;
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-stack, sans-serif;
   font-weight: 500;
 }
 
 h2 {
   text-align:center;
   font-size:26px;
-  font-family: $header-font;
+  font-family: $font-stack;
   margin-bottom:30px;
   display: inline-block;
   font-weight: 700;
@@ -300,8 +324,25 @@ h4 {
 .resume .title {
   font-style: italic;
 }
-.resume p {
-  text-align: justify;
+
+/***list-styles***/
+
+.resume ul {
+  list-style: none;
+}
+
+.resume experience ul {
+  list-style: none;
+  padding-left: auto;
+}
+
+.resume ul li:before {
+  content: '›';
+  margin-right: 10px;
+}
+
+.skills li {
+  color: $primary-color;
 }
 
 /***responsive-styles***/
@@ -332,8 +373,8 @@ h4 {
   }
 }
 @media (max-width: 991px) {
-  .education {
-    margin-top: 45px;
+  .skills {
+    margin-bottom: 45px;
   }
   .headline {
     margin: 34% 0 0 3%;
