@@ -1,4 +1,4 @@
-$font-stack:    'Work Sans';
+$font-stack:    'Open Sans';
 $header-font: 'Open Sans';
 $primary-color: #49A796;
 
@@ -36,18 +36,20 @@ body .navbar {
 .navbar .navbar-header .navbar-brand {
     color: #fff;
     font-family: $header-font;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
+    letter-spacing: 1px;
 }
 
 .navbar ul a {
   color: #fff;
   font-family: $font-stack;
-  font-size: 16px;
+  font-size: 14px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 .navbar ul a:hover {
@@ -232,7 +234,7 @@ form {
 h1 {
   font-size: 44px;
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: $font-stack, sans-serif;
   font-weight: 600;
   letter-spacing: 3px;
 }
