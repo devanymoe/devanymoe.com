@@ -7,21 +7,22 @@ html body *:focus {
 
 body {
   font: 100% "Work Sans";
-  color: #FF7665;
+  color: #49A796;
   font-size: 16px;
   line-height: 150%; }
 
 /***Nav-Styles***/
 .navs {
-  background: #FF7665; }
+  padding-left: 10px;
+  padding-right: 10px; }
 
 body .navbar {
   margin-bottom: 0; }
 
 .navbar .navbar-header .navbar-brand {
   color: #fff;
-  font-family: "Montserrat";
-  font-size: 30px;
+  font-family: "Open Sans";
+  font-size: 24px;
   font-weight: 500; }
 
 .navbar ul a {
@@ -34,7 +35,7 @@ body .navbar {
   margin-bottom: 10px; }
 
 .navbar ul a:hover {
-  color: #FF7665;
+  color: #49A796;
   background-color: #fff; }
 
 .icon-bar {
@@ -43,20 +44,26 @@ body .navbar {
 /***Header-Styles***/
 .header {
   width: 100%;
-  background: url(../images/devany.jpg);
-  height: 570px;
+  background: url(../images/background.jpg);
+  height: 1100px;
   overflow: hidden;
   background-size: cover;
-  background-position: 100% -9%;
-  background-repeat: no-repeat; }
+  background-position: 100% -80px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
 
 .headline {
-  background-color: #1c1c1c;
-  padding: 5px 15px 5px 15px;
-  margin: 17% 0 0 20%;
-  display: inline-block; }
+  margin-top: 300px;
+  text-align: center; }
 
 /***Section-Styles***/
+.about-section {
+  text-align: center;
+  color: #000;
+  margin-top: 460px; }
+
 .dark-section {
   background-color: #1c1c1c;
   color: #fff;
@@ -88,7 +95,7 @@ textarea[name=message] {
 
 input[name=name]:focus, input[name=_replyto]:focus, textarea[name=message]:focus {
   box-shadow: none;
-  border: 1px solid #FF7665; }
+  border: 1px solid #49A796; }
 
 .button {
   background-color: transparent;
@@ -96,15 +103,15 @@ input[name=name]:focus, input[name=_replyto]:focus, textarea[name=message]:focus
   border-radius: 2px;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
-  color: #FF7665;
-  border: 2px solid #FF7665; }
+  color: #49A796;
+  border: 2px solid #49A796; }
 
 .button:hover {
-  background-color: #FF7665;
+  background-color: #49A796;
   color: #fff; }
 
 .button:focus {
-  background-color: #FF7665;
+  background-color: #49A796;
   color: #fff;
   outline: none; }
 
@@ -125,7 +132,7 @@ form {
   opacity: .85; }
 
 .piece-hover {
-  background: #FF7665;
+  background: #49A796;
   position: absolute;
   width: 250px;
   top: 0;
@@ -159,7 +166,7 @@ form {
   margin-top: 5px; }
 
 .light-section blockquote {
-  border-left: 5px solid #FF7665; }
+  border-left: 5px solid #49A796; }
 
 .quotation {
   font-family: Georgia;
@@ -194,10 +201,16 @@ form {
 
 /***Text-Styles***/
 h1 {
-  font-size: 30px;
+  font-size: 44px;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500; }
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px; }
+
+h1 span {
+  font-family: serif;
+  font-style: italic;
+  font-weight: 200; }
 
 .project-name {
   font-size: 30px;
@@ -208,7 +221,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 26px;
-  font-family: "Montserrat";
+  font-family: "Open Sans";
   margin-bottom: 30px;
   display: inline-block;
   font-weight: 700; }
@@ -216,9 +229,7 @@ h2 {
 .header h3 {
   color: #fff;
   font-size: 20px;
-  margin: 1.5% 0 0 20%;
-  max-width: 450px;
-  line-height: 150%; }
+  max-width: 500px; }
 
 .row h3 {
   color: #fff;
@@ -227,16 +238,12 @@ h2 {
   margin: 10px auto; }
 
 .dark-section h2 {
-  background-color: #fff;
-  padding: 5px 10px 5px 10px;
   text-align: center;
-  color: #FF7665; }
+  color: #49A796; }
 
 .light-section h2, .project h2 {
-  background-color: #1c1c1c;
-  padding: 5px 10px 5px 10px;
   text-align: center;
-  color: #fff; }
+  color: #000; }
 
 h3 .fa:first-child {
   margin-right: 10px; }
@@ -245,7 +252,7 @@ h3 .fa {
   margin-right: 6px; }
 
 h4 {
-  color: #FF7665;
+  color: #49A796;
   width: 87%;
   margin: 24px auto 3px auto; }
 
@@ -270,8 +277,6 @@ h4 {
     background-position: 100% -30%; }
 
   .header h3 {
-    background-color: #fff;
-    color: #FF7665;
     padding: 10px;
     font-size: 19px; } }
 @media (max-width: 1000px) {

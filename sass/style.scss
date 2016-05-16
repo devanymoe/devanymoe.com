@@ -1,6 +1,6 @@
 $font-stack:    'Work Sans';
-$header-font: 'Montserrat';
-$primary-color: #FF7665;
+$header-font: 'Open Sans';
+$primary-color: #49A796;
 
 /***General-Styles***/
 
@@ -20,7 +20,9 @@ body {
 
 /***Nav-Styles***/
 .navs {
-  background: $primary-color;
+  // background: $primary-color;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 body .navbar {
@@ -30,7 +32,7 @@ body .navbar {
 .navbar .navbar-header .navbar-brand {
     color: #fff;
     font-family: $header-font;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -56,22 +58,29 @@ body .navbar {
 
 .header {
   width: 100%;
-  background: url(../images/devany.jpg);
-  height: 570px;
+  background: url(../images/background.jpg);
+  height: 1100px;
   overflow: hidden;
   background-size: cover;
-  background-position: 100% -9%;
+  background-position: 100% -80px;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .headline {
-  background-color: #1c1c1c;
-  padding: 5px 15px 5px 15px;
-  margin: 17% 0 0 20%;
-  display: inline-block;
+  margin-top: 300px;
+  text-align: center;
 }
 
 /***Section-Styles***/
+
+.about-section {
+  text-align: center;
+  color: #000;
+  margin-top: 460px;
+}
 
 .dark-section {
   background-color: #1c1c1c;
@@ -217,10 +226,17 @@ form {
 /***Text-Styles***/
 
 h1 {
-  font-size: 30px;
+  font-size: 44px;
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+h1 span {
+  font-family: serif;
+  font-style: italic;
+  font-weight: 200;
 }
 
 .project-name {
@@ -242,9 +258,7 @@ h2 {
 .header h3 {
   color: #fff;
   font-size: 20px;
-  margin: 1.5% 0 0 20%;
-  max-width: 450px;
-  line-height: 150%;
+  max-width: 500px;
 }
 
 .row h3 {
@@ -255,17 +269,13 @@ h2 {
 }
 
 .dark-section h2 {
-  background-color:#fff;
-  padding: 5px 10px 5px 10px;
   text-align: center;
   color: $primary-color;
 }
 
 .light-section h2, .project h2 {
-  background-color:#1c1c1c;
-  padding: 5px 10px 5px 10px;
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
 h3 .fa:first-child {
@@ -306,8 +316,6 @@ h4 {
     background-position: 100% -30%;
   }
   .header h3 {
-    background-color: #fff;
-    color: $primary-color;
     padding: 10px;
     font-size: 19px;
   }
