@@ -41,7 +41,7 @@ body .navbar {
   margin-bottom: 10px;
   letter-spacing: 1px; }
 
-.navbar ul a:hover {
+.navbar ul a:hover, .navbar ul a:focus {
   color: #49A796;
   background-color: #fff; }
 

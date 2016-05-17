@@ -51,7 +51,7 @@ body .navbar {
   letter-spacing: 1px;
 }
 
-.navbar ul a:hover {
+.navbar ul a:hover, .navbar ul a:focus {
   color: $primary-color;
   background-color: #fff;
 }
