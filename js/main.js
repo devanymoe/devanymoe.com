@@ -17,7 +17,7 @@ function scrollToAnchor(aid){
   $('html,body').animate({scrollTop: aTag.offset().top - 100},'slow');
 };
 
-$("a").click(function(e) {
+$("li > a").click(function(e) {
   e.preventDefault();
   var href = $(this).attr('href').replace('#', '')
   scrollToAnchor(href);
