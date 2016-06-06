@@ -8,7 +8,7 @@ html body *:focus {
 
 body {
   font: 100% "Open Sans";
-  color: #49A796;
+  color: #49a796;
   font-size: 16px;
   line-height: 150%; }
 
@@ -19,7 +19,7 @@ body {
   transition: 0.5s ease; }
 
 .solidNav {
-  background-color: #49A796; }
+  background-color: #49a796; }
 
 body .navbar {
   margin-bottom: 0; }
@@ -42,7 +42,7 @@ body .navbar {
   letter-spacing: 1px; }
 
 .navbar ul a:hover, .navbar ul a:focus {
-  color: #49A796;
+  color: #49a796;
   background-color: #fff; }
 
 .icon-bar {
@@ -124,7 +124,7 @@ textarea[name=message] {
 
 input[name=name]:focus, input[name=_replyto]:focus, textarea[name=message]:focus {
   box-shadow: none;
-  border: 1px solid #49A796; }
+  border: 1px solid #49a796; }
 
 .button {
   background-color: transparent;
@@ -132,15 +132,15 @@ input[name=name]:focus, input[name=_replyto]:focus, textarea[name=message]:focus
   border-radius: 2px;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
-  color: #49A796;
-  border: 2px solid #49A796; }
+  color: #49a796;
+  border: 2px solid #49a796; }
 
 .button:hover {
-  background-color: #49A796;
+  background-color: #49a796;
   color: #fff; }
 
 .button:focus {
-  background-color: #49A796;
+  background-color: #49a796;
   color: #fff;
   outline: none; }
 
@@ -161,7 +161,7 @@ form {
   opacity: .85; }
 
 .piece-hover {
-  background: #49A796;
+  background: #49a796;
   position: absolute;
   width: 250px;
   top: 0;
@@ -195,7 +195,7 @@ form {
   margin-top: 5px; }
 
 .light-section blockquote {
-  border-left: 5px solid #49A796; }
+  border-left: 5px solid #49a796; }
 
 .quotation {
   font-family: Georgia;
@@ -271,7 +271,7 @@ h2 {
 
 .dark-section h2 {
   text-align: center;
-  color: #49A796; }
+  color: #49a796; }
 
 .light-section h2, .project h2 {
   text-align: center;
@@ -284,12 +284,15 @@ h3 .fa {
   margin-right: 6px; }
 
 h4 {
-  color: #49A796;
+  color: #49a796;
   width: 87%;
   margin: 24px auto 3px auto; }
 
 .resume .title {
   font-style: italic; }
+
+.outgoing {
+  color: #49A796; }
 
 /***list-styles***/
 .resume ul {
@@ -304,7 +307,7 @@ h4 {
   margin-right: 10px; }
 
 .skills li {
-  color: #49A796; }
+  color: #49a796; }
 
 /***responsive-styles***/
 @media (max-width: 1199px) {
@@ -332,5 +335,3 @@ h4 {
 
   .headline {
     margin: 34% 0 0 3%; } }
-
-/*# sourceMappingURL=style.css.map */
